@@ -1,7 +1,7 @@
 ---
 theme: minima
 layout: post
-title: "Introduction-to-IT-Service-Management"
+title: "Week 1-Introduction to IT Service Management"
 date: 2025-09-03
 ---
 
