@@ -8,6 +8,12 @@ title: "My ITSM Journey"
 This is my IT Service Management (ITSM) journey! Here you'll find all my assignments, labs, reflections, and projects throughout the semester. Each milestone represents a 'room' in my house, showcasing my growth in IT Service Management.
 
 {% for post in site.posts %}
-  1. <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-  <p>{{ post.excerpt }}</p>
+  <div class="post-container">
+    <ol>
+      <li>
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    </ol>
+  </div>
 {% endfor %}
