@@ -12,6 +12,8 @@ This week in our **IT Service Management (ITSM)** course, we started by defining
 
 We also learned the difference between products and services. Unlike products, which are tangible, IT services are intangible and co-create value together with customers. This co-creation occurs because both the provider and the user interact and contribute to the value derived from a service. To understand this better, we studied the ITIL 4 Service Value System (SVS), which integrates components such as governance, practices, and continual improvement to ensure value creation through IT services.
 
+![4 Dimensions of ITSM](/My-ITSM-Journey/assets/fourdimsitsm.jpg)
+
 A core part of ITSM is understanding the **4 dimensions of IT service management**:
 
 - **Organizations & People** – the roles, responsibilities, and skills required.
