@@ -24,7 +24,7 @@ A core part of ITSM is understanding the **four dimensions of service management
 
 Here is the **Mind Map** I created summarizing the four dimensions of ITSM:  
 
-![Mind Map of ITSM Dimensions](assets/mindmap1.png)
+![Mind Map of ITSM Dimensions](assets/mindmap1.jpg)
 
 ---
 
