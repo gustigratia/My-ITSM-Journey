@@ -78,4 +78,3 @@ I also identified co-creation points where both users and the provider contribut
 
 This week’s activities provided a solid foundation in **IT Service Management (ITSM)** and highlighted the practical importance of the four dimensions in real-world scenarios. Creating a Mind Map helped me visualize key concepts, while the university email outage case study demonstrated how disruptions can impact people, technology, partners, processes, and value. Additionally, designing the Reverse Engineering Value poster for Google Drive reinforced the idea of co-creation of value between service providers and users. Overall, these exercises strengthened my understanding of how IT services contribute to organizational goals, why strategic planning in IT is essential, and how to analyze both successes and challenges in service delivery.
 
-
