@@ -25,7 +25,7 @@ A core part of ITSM is understanding the **four dimensions of service management
 
 Here is the **Mind Map** I created summarizing the four dimensions of ITSM:  
 
-![Mind Map of ITSM Dimensions](../assets/mindmap1.jpg)
+![Mind Map of ITSM Dimensions](/My-ITSM-Journey/assets/mindmap1.jpg)
 
 ---
 
@@ -52,7 +52,7 @@ The university relies heavily on its email service (**Microsoft 365**) for offic
 
 Using the four dimensions framework, I mapped the impacts as follows:
 
-![Case Study Mapping](../assets/emailService.png)
+![Case Study Mapping](/My-ITSM-Journey/assets/emailService.png)
 
 ---
 
@@ -68,7 +68,7 @@ I also identified **co-creation points** where both users and the provider contr
 - Users upload, share, and organize files.
 - Google provides storage infrastructure, security, and collaboration tools to enhance usability.
 
-![Reverse Engineering Value Poster](../assets/poster1.png)
+![Reverse Engineering Value Poster](/My-ITSM-Journey/assets/poster1.png)
 
 ---
 
