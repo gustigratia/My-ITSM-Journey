@@ -11,8 +11,8 @@ excerpt: "Applied ITIL 4 this week through two cases (chatbot quality & Wi-Fi ve
 ![Service Value Chain](/My-ITSM-Journey/assets/svc.jpg)
 
 This week we moved from theory to practice. I analyzed some real-world cases using the *Four Dimensions* and *Guiding Principles*, walked through the Service Value Chain (SVC) from demand → value for an email-domain migration, created a mind-map of the Service Value System (SVS), and compiled a glossary of key ITIL terms. (Source: Week 3 class activity.) 
-<iframe src="assets/Week3.pdf" width="100%" height="600px">
-  Your browser does not support PDFs. Please <a href="assets/Week3.pdf">download the PDF</a> to view it.
+<iframe src="/My-ITSM-Journey/assets/Week3.pdf" width="100%" height="600px">
+  Your browser does not support PDFs. Please <a href="/My-ITSM-Journey/assets/Week3.pdf">download the PDF</a> to view it.
 </iframe>
 
 ---
