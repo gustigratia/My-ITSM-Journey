@@ -8,6 +8,8 @@ excerpt: "Applied ITIL 4 this week through two cases (chatbot quality & Wi-Fi ve
 
 ## Week 3 — ITIL 4: Service Value Chain & SVS in Action
 
+![Service Value Chain](/My-ITSM-Journey/assets/svc.jpg)
+
 This week we moved from theory to practice. I analyzed some real-world cases using the *Four Dimensions* and *Guiding Principles*, walked through the Service Value Chain (SVC) from demand → value for an email-domain migration, created a mind-map of the Service Value System (SVS), and compiled a glossary of key ITIL terms. (Source: Week 3 class activity.) 
 <iframe src="assets/Week3_ITIL_Activity.pdf" width="100%" height="600px">
   Your browser does not support PDFs. Please <a href="assets/Week3.pdf">download the PDF</a> to view it.
@@ -39,7 +41,7 @@ The goal is to understand how ITIL 4 concepts can be applied to practical proble
 - **Other Dimensions:**  
   - **Value Streams & Processes** — define vendor-risk process & contingency.  
   - **Organizations & People** — proactive comms to students during impact.
-- **Other Principles:** **Focus on Value**, **Think and Work Holistically**, **Optimize and Automate** (status/ETA monitoring). :contentReference[oaicite:2]{index=2}
+- **Other Principles:** **Focus on Value**, **Think and Work Holistically**, **Optimize and Automate** (status/ETA monitoring). 
 
 ---
 
