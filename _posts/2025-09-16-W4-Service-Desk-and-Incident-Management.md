@@ -34,27 +34,11 @@ Questions answered using ITIL V3 Wiki as reference:
 - **Processes supported:** Register incidents to ensure accurate tracking, Process service requests (e.g., devices, app access), Resolve incidents immediately via first-level support, Analyze and fix incidents at second-level support, escalate to Problem Management if needed, Monitor and escalate unresolved incidents to meet SLAs, Proactively inform users about ongoing disruptions, Close and evaluate incidents, ensuring quality resolution and lessons learned, Maintain a knowledge base to improve efficiency, Produce incident reports to support service improvement.
   
 - **Key KPIs:**  
-| KPI                        | Description |
-|-----------------------------|-------------|
-| Number of Repeated Incidents | Measures the number of incidents that recur after initial resolution, indicating unresolved underlying problems. |
-| Incidents Resolved Remotely  | Shows the number of incidents resolved without on-site interaction, indicating efficiency of remote support. |
-| Number of Escalations        | Measures how many incidents must be escalated to higher-level support because they cannot be resolved at the first level. |
-| Number of Incidents          | The total number of incidents recorded within a given period, reflecting the volume of support requests received. |
-| Average Initial Response Time | The average time taken to provide the first response to an incident reported by a user. |
-| Incident Resolution Time     | The average time required to resolve an incident from the moment it is reported until it is closed. |
-| First Time Resolution Rate   | The percentage of incidents resolved during the first interaction without escalation or further intervention. |
-| Resolution within SLA        | The percentage of incidents resolved within the time agreed in the Service Level Agreement (SLA). |
-| Incident Resolution Effort   | The total resources or effort required to resolve incidents, including staff time and energy used by the support team. |
+![Service Desk KPI](/My-ITSM-Journey/assets/kpiservicedesk.jpg)
 
 
 - **Service desk vs. incident management:**  
-| Aspect                  | Service Desk                                                   | Incident Management                                    |
-|--------------------------|---------------------------------------------------------------|--------------------------------------------------------|
-| Definition               | A function that provides a single point of contact for users. | A process to manage the incident lifecycle.            |
-| Main Focus               | Provides general support and handles service requests.        | Identifies, analyzes, and resolves incidents.          |
-| Responsibilities         | Incident logging, user communication, and escalation.         | Resolves incidents and prevents further impact.        |
-| Involvement with Other Processes | Interacts with various other ITIL processes.              | Focuses on incident identification and resolution.     |
-
+![Service Desk vs Incident Management](/My-ITSM-Journey/assets/servicedeskvsincident.jpg)
 
 ---
 
