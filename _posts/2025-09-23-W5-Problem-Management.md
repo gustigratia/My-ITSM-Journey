@@ -56,7 +56,7 @@ We analyzed an **Incident Dataset** from Kaggle to identify potential problems a
 
 
 **Root Cause Analysis Example:**  
-![Fishbone Diagram](/My-ITSM-Journey/assets/fishbonediagram.jpg)
+![Fishbone Diagram](/My-ITSM-Journey/assets/fishbonediagram.png)
 
 **KEDB Entry Example:**  
 ![Known Error Database](/My-ITSM-Journey/assets/kedb.jpg)
