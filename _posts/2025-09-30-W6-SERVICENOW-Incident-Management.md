@@ -135,3 +135,5 @@ The real-time dashboards were particularly helpful in monitoring incidents, ensu
 For a detailed breakdown of the activity, refer to the [PDF Class Activity](/My-ITSM-Journey/assets/Week6.pdf) embedded below:
 
 <iframe src="/My-ITSM-Journey/assets/Week6.pdf" width="100%" height="600px"></iframe>
+
+
