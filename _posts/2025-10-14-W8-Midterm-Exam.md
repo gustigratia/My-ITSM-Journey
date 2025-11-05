@@ -31,6 +31,7 @@ I was tasked with auditing, correcting, and improving the dataset while maintain
 ---
 
 ### **Dataset Overview**
+![The Dataset](/My-ITSM-Journey/assets/midterm_dataset.jpg)
 
 Each record represented a helpdesk ticket with these fields:  
 `Ticket ID`, `Ticket Type`, `Category`, `Priority`, `Resolution Time (hrs)`, `Description`, `Department`, `Ticket Agent`, `Ticket User`
@@ -54,8 +55,8 @@ To improve the dataset:
 - Verified and aligned priorities with incident impact and urgency.  
 - Ensured consistent naming and department mapping.
 
-**Improved Dataset Link:**  
-[Google Sheets — Cleaned Helpdesk Dataset](https://docs.google.com/spreadsheets/d/18XvLzPsWNN--CdBZ_rULdMmB16llqe2ZAS_tazdGj6U/edit?usp=sharing)
+**Improved Dataset:**  
+![Improved Dataset](/My-ITSM-Journey/assets/midterm_improved_dataset.jpg)
 
 ---
 
