@@ -125,3 +125,5 @@ This lab provided a deeper understanding of collaborative IT service management 
 For a detailed breakdown of the activity, refer to the [PDF Lab Report](/My-ITSM-Journey/assets/Week7.pdf) embedded below:
 
 <iframe src="/My-ITSM-Journey/assets/Week7.pdf" width="100%" height="600px"></iframe>
+
+
