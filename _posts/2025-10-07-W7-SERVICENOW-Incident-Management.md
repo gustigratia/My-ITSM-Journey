@@ -6,7 +6,6 @@ date: 2025-10-07
 excerpt: "This week, our group collaborated to transform real-world incident data from Kaggle into ITIL-compliant tickets using ServiceNow. We simulated multi-tier IT support involving customers, agents, and specialists across network, hardware, and software categories."
 ---
 
-## Week 7 — Group Simulation Lab: Turning Real Data into ITIL Tickets in ServiceNow
 
 This week’s lab focused on applying ITIL principles in a group-based simulation by converting real incident data into structured ITIL tickets using ServiceNow. We learned how to process raw data, categorize incidents, and simulate a real IT support workflow involving escalation between multiple roles and teams.
 
