@@ -126,4 +126,3 @@ For a detailed breakdown of the activity, refer to the [PDF Lab Report](/My-ITSM
 
 <iframe src="/My-ITSM-Journey/assets/Week7.pdf" width="100%" height="600px"></iframe>
 
-
