@@ -1,5 +1,4 @@
 ---
-theme: minima
 layout: post
 title: "Week 8 - Midterm Exam: IT Service Management"
 date: 2025-10-15
