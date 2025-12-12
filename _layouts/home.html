@@ -167,7 +167,7 @@ layout: default
 <div class="home-container">
 
   <div class="profile-section">
-    <img src="https://github.com/identicons/jasonlong.png" alt="Profile Picture" class="profile-img">
+    <!-- <img src="https://github.com/gustigratia/My-ITSM-Journey/assets/my_img.png" alt="Profile Picture" class="profile-img"> -->
     
     <h1 class="home-title">{{ page.title }}</h1>
     
@@ -176,16 +176,16 @@ layout: default
     {% endif %}
 
     <div class="social-links">
-      <a href="https://github.com/yourusername" class="social-btn">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" class="social-btn">LinkedIn</a>
-      <a href="mailto:your@email.com" class="social-btn">Contact Me</a>
+      <a href="https://github.com/gustigratia" class="social-btn">GitHub</a>
+      <a href="https://linkedin.com/in/gustigratia" class="social-btn">LinkedIn</a>
+      <a href="mailto:gustigratia706@gmail.com" class="social-btn">Contact Me</a>
     </div>
   </div>
 
-  <h3 class="section-title">Latest Posts & Projects</h3>
+  <h3 class="section-title">ITSM Posts & Projects</h3>
 
   <div class="post-list">
-    {% for post in site.posts limit:6 %}
+    {% for post in site.posts reversed %}
     <div class="post-card">
       <div>
         <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
