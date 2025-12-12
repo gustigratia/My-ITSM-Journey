@@ -2,7 +2,21 @@
 # remote_theme: pages-themes/cayman@v0.2.0
 # plugins:
 #   - jekyll-remote-theme
-theme: minima
+
+
+# theme: minima
+# title: Gusti Gratia Delpiera
+# description: Welcome to my IT Service Management (ITSM) journey! Think of it as my digital 'home,' where I share my progress and growth throughout this course. This journey is a collection of all the assignments, labs, reflections, and projects I've completed over the semester. Each milestone represents a 'room' in my house, reflecting a different aspect of my development in the world of IT Service Management.
+# paginate: 5
+
 title: Gusti Gratia Delpiera
 description: Welcome to my IT Service Management (ITSM) journey! Think of it as my digital 'home,' where I share my progress and growth throughout this course. This journey is a collection of all the assignments, labs, reflections, and projects I've completed over the semester. Each milestone represents a 'room' in my house, reflecting a different aspect of my development in the world of IT Service Management.
+
+# Gunakan theme Cayman
+remote_theme: pages-themes/cayman@v0.2.0
+
+plugins:
+  - jekyll-remote-theme
+
 paginate: 5
+
