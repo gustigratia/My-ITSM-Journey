@@ -1,5 +1,4 @@
 ---
-theme: minima
 layout: post
 title: "Week 6 - Incident Management with ServiceNow"
 date: 2025-09-30
