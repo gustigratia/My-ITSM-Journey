@@ -3,105 +3,178 @@ layout: default
 ---
 
 <style>
-  /* Container */
+  /* --- Global Container --- */
   .post-container {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 0 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    line-height: 1.7;
-    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #24292e;
   }
 
-  /* Title */
+  /* --- Navigation --- */
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #586069;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: #159957;
+    text-decoration: none;
+  }
+
+  .back-link::before {
+    content: "←";
+    margin-right: 5px;
+  }
+
+  /* --- Header Section --- */
+  .post-header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
   .post-title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #159957; /* Cayman Green */
   }
 
-  /* Metadata */
-  .post-meta {
-    color: #666;
+  .post-meta-data {
+    color: #6a737d;
     font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  /* --- Content Typography --- */
+  .post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #24292e;
+  }
+
+  .post-content h2 {
+    font-size: 1.75rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaecef;
+    color: #1b1f23;
+  }
+
+  .post-content h3 {
+    font-size: 1.4rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #1b1f23;
+  }
+
+  .post-content p {
     margin-bottom: 25px;
   }
 
-  /* Headings */
-  .post-container h2 {
-    margin-top: 40px;
-    font-size: 1.6rem;
-    border-left: 4px solid #159957; /* Cayman theme green */
-    padding-left: 10px;
+  .post-content a {
+    color: #159957;
+    text-decoration: none;
+    font-weight: 600;
   }
 
-  .post-container h3 {
-    margin-top: 25px;
-    font-size: 1.3rem;
+  .post-content a:hover {
+    text-decoration: underline;
   }
 
-  /* Horizontal line */
-  .post-container hr {
-    border: 0;
-    height: 1px;
-    background: #e0e0e0;
+  /* --- Elements: Blockquotes & Code --- */
+  .post-content blockquote {
+    border-left: 4px solid #159957;
+    padding: 15px 20px;
+    margin: 30px 0;
+    background-color: #f6f8fa;
+    color: #586069;
+    font-style: italic;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .post-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     margin: 30px 0;
   }
 
-  /* Content styling */
-  .post-container p,
-  .post-container li {
-    font-size: 1.05rem;
-  }
-
-  /* Code block */
-  pre {
-    background: #f6f8fa;
-    padding: 15px;
+  /* Styling khusus untuk Code Block agar terlihat Pro */
+  .post-content pre {
+    background-color: #f6f8fa;
     border-radius: 6px;
-    overflow-x: auto;
+    padding: 16px;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border: 1px solid #e1e4e8;
   }
 
-  /* Blockquote */
-  blockquote {
-    border-left: 4px solid #159957;
-    padding-left: 15px;
-    color: #555;
-    margin-left: 0;
-    font-style: italic;
+  /* --- Author / Footer Card --- */
+  .post-footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #eaecef;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
-  /* Images */
-  .post-container img {
-    max-width: 100%;
-    border-radius: 8px;
+  .author-avatar-small {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #159957;
   }
 
-  /* PDF iframe */
-  .pdf-frame {
-    margin-top: 25px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  .author-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #24292e;
+  }
+
+  .author-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #586069;
   }
 </style>
 
 <div class="post-container">
   
-  <h1 class="post-title">{{ page.title }}</h1>
+  <a href="{{ '/' | relative_url }}" class="back-link">Back to Home</a>
 
-  {% if page.date %}
-  <p class="post-meta">
-    📅 {{ page.date | date: "%B %d, %Y" }}
-  </p>
-  {% endif %}
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta-data">
+      {% if page.date %}
+        📅 {{ page.date | date: "%B %d, %Y" }}
+      {% endif %}
+      </div>
+  </header>
 
   <article class="post-content">
     {{ content }}
   </article>
 
-  <hr>
-
-  <p class="post-meta">🔹 Written by {{ site.title }}</p>
+  <div class="post-footer">
+    <img src="https://github.com/identicons/jasonlong.png" alt="Author" class="author-avatar-small">
+    
+    <div class="author-info">
+      <h4>Written by {{ site.title }}</h4>
+      <p>{{ site.description }}</p>
+    </div>
+  </div>
 
 </div>
