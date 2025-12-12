@@ -1,5 +1,4 @@
 ---
-theme: minima
 layout: post
 title: "Week 3-ITIL4 Service Value Chain & SVS in Action"
 date: 2025-09-09
