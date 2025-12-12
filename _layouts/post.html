@@ -3,178 +3,270 @@ layout: default
 ---
 
 <style>
-  /* --- Global Container --- */
-  .post-container {
+  /* --- RESET & LAYOUT --- */
+  body {
+    background-color: #f4f4f4; /* Background abu-abu muda agar kartu putih menonjol */
+  }
+
+  .post-layout-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* --- HERO HEADER (Gradient) --- */
+  .post-hero {
+    background: linear-gradient(135deg, #159957 0%, #0e7b44 100%);
+    color: white;
+    padding: 120px 20px 180px; /* Padding bawah besar untuk overlap */
+    text-align: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* Efek miring di bawah */
+  }
+
+  .post-hero-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    color: #24292e;
   }
 
-  /* --- Navigation --- */
-  .back-link {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    color: #586069;
-    font-weight: 600;
-    margin-bottom: 30px;
-    font-size: 0.9rem;
-    transition: color 0.2s;
-  }
-
-  .back-link:hover {
-    color: #159957;
-    text-decoration: none;
-  }
-
-  .back-link::before {
-    content: "←";
-    margin-right: 5px;
-  }
-
-  /* --- Header Section --- */
-  .post-header {
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .post-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    color: #159957; /* Cayman Green */
-  }
-
-  .post-meta-data {
-    color: #6a737d;
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-
-  /* --- Content Typography --- */
-  .post-content {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #24292e;
-  }
-
-  .post-content h2 {
-    font-size: 1.75rem;
-    margin-top: 50px;
+  .post-category {
+    font-family: "Courier New", Courier, monospace;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
     margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eaecef;
-    color: #1b1f23;
+    backdrop-filter: blur(5px);
   }
 
-  .post-content h3 {
-    font-size: 1.4rem;
-    margin-top: 35px;
+  .post-hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
     margin-bottom: 15px;
-    color: #1b1f23;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
   }
 
-  .post-content p {
-    margin-bottom: 25px;
+  .post-hero-meta {
+    font-size: 1rem;
+    opacity: 0.9;
+    font-weight: 300;
   }
 
-  .post-content a {
+  /* --- FLOATING CONTENT CARD --- */
+  .article-card {
+    background: white;
+    max-width: 840px;
+    margin: -120px auto 60px; /* Negative margin untuk overlap ke atas */
+    padding: 60px 80px;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+  }
+
+  /* --- TYPOGRAPHY ARTIKEL --- */
+  .article-content {
+    font-family: "Merriweather", "Georgia", serif; /* Font Serif untuk kesan premium */
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #2c3e50;
+  }
+
+  /* Drop Cap (Huruf pertama besar) */
+  .article-content > p:first-of-type::first-letter {
+    font-size: 3.5rem;
+    line-height: 0.8;
+    font-weight: bold;
     color: #159957;
-    text-decoration: none;
+    float: left;
+    margin-right: 12px;
+    margin-top: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  .article-content h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    color: #111;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  /* Hiasan kecil di samping H2 */
+  .article-content h2::before {
+    content: "#";
+    color: #159957;
+    margin-right: 10px;
+    opacity: 0.5;
+  }
+
+  .article-content h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.4rem;
+    margin-top: 30px;
     font-weight: 600;
   }
 
-  .post-content a:hover {
-    text-decoration: underline;
+  .article-content a {
+    color: #159957;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(21, 153, 87, 0.3);
+    transition: all 0.2s;
   }
 
-  /* --- Elements: Blockquotes & Code --- */
-  .post-content blockquote {
-    border-left: 4px solid #159957;
-    padding: 15px 20px;
-    margin: 30px 0;
-    background-color: #f6f8fa;
-    color: #586069;
+  .article-content a:hover {
+    background-color: rgba(21, 153, 87, 0.1);
+    border-bottom-color: #159957;
+  }
+
+  .article-content blockquote {
+    border-left: none;
+    position: relative;
+    padding: 30px 40px;
+    margin: 40px 0;
+    background: #f9f9f9;
     font-style: italic;
-    border-radius: 0 5px 5px 0;
-  }
-
-  .post-content img {
-    max-width: 100%;
+    font-size: 1.2rem;
+    color: #555;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin: 30px 0;
+  }
+  
+  .article-content blockquote::before {
+    content: "“";
+    font-size: 4rem;
+    color: #159957;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    opacity: 0.2;
+    font-family: Georgia, serif;
   }
 
-  /* Styling khusus untuk Code Block agar terlihat Pro */
-  .post-content pre {
-    background-color: #f6f8fa;
-    border-radius: 6px;
-    padding: 16px;
-    overflow: auto;
+  /* --- CODE BLOCKS (Mac Terminal Style) --- */
+  .article-content pre {
+    background: #282c34; /* Dark mode untuk code */
+    color: #abb2bf;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: "Fira Code", Consolas, monospace;
     font-size: 0.9rem;
-    line-height: 1.45;
-    border: 1px solid #e1e4e8;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    margin: 30px 0;
+    position: relative;
   }
 
-  /* --- Author / Footer Card --- */
-  .post-footer {
+  /* 3 titik ala macbook di pojok code block */
+  .article-content pre::before {
+    content: "● ● ●"; 
+    color: rgba(255,255,255,0.2);
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    letter-spacing: 2px;
+  }
+
+  .article-content code {
+    background: rgba(21, 153, 87, 0.1);
+    color: #0e7b44;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: Consolas, monospace;
+  }
+  
+  .article-content pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+  }
+
+  /* --- IMAGES --- */
+  .article-content img {
+    max-width: 100%; /* Bisa lebih lebar dari teks */
+    width: 100%;
+    border-radius: 6px;
+    margin: 30px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+
+  /* --- FOOTER AUTHOR --- */
+  .author-section {
     margin-top: 60px;
+    border-top: 1px dashed #ddd;
     padding-top: 30px;
-    border-top: 1px solid #eaecef;
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
   }
 
-  .author-avatar-small {
-    width: 60px;
-    height: 60px;
+  .author-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .author-img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #159957;
   }
 
-  .author-info h4 {
-    margin: 0;
-    font-size: 1.1rem;
-    color: #24292e;
-  }
-
-  .author-info p {
-    margin: 5px 0 0;
+  .back-btn {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 600;
+    color: #999;
+    text-decoration: none;
     font-size: 0.9rem;
-    color: #586069;
+  }
+  
+  .back-btn:hover {
+    color: #159957;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .post-hero { padding: 80px 20px 120px; }
+    .post-hero-title { font-size: 2rem; }
+    .article-card { padding: 30px 20px; margin-top: -80px; }
+    .article-content { font-size: 1rem; }
   }
 </style>
 
-<div class="post-container">
+<div class="post-layout-wrapper">
   
-  <a href="{{ '/' | relative_url }}" class="back-link">Back to Home</a>
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <div class="post-meta-data">
-      {% if page.date %}
-        📅 {{ page.date | date: "%B %d, %Y" }}
-      {% endif %}
+  <header class="post-hero">
+    <div class="post-hero-content">
+      <span class="post-category">Jurnal / Project</span>
+      <h1 class="post-hero-title">{{ page.title }}</h1>
+      <div class="post-hero-meta">
+        Diposting pada {{ page.date | date: "%d %B %Y" }}
       </div>
+    </div>
   </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-  <div class="post-footer">
-    <img src="https://github.com/identicons/jasonlong.png" alt="Author" class="author-avatar-small">
-    
-    <div class="author-info">
-      <h4>Written by {{ site.title }}</h4>
-      <p>{{ site.description }}</p>
+  <article class="article-card">
+    <div class="article-content">
+      {{ content }}
     </div>
-  </div>
+
+    <div class="author-section">
+      <div class="author-details">
+        <img src="https://github.com/identicons/jasonlong.png" alt="Author" class="author-img">
+        <div>
+          <strong>{{ site.title }}</strong>
+          <div style="font-size: 0.85rem; color: #777;">Data Scientist & Developer</div>
+        </div>
+      </div>
+      <a href="{{ '/' | relative_url }}" class="back-btn">← Kembali</a>
+    </div>
+
+  </article>
 
 </div>
