@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+<style>
+  /* Container */
+  .post-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  /* Title */
+  .post-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  /* Metadata */
+  .post-meta {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  /* Headings */
+  .post-container h2 {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    border-left: 4px solid #159957; /* Cayman theme green */
+    padding-left: 10px;
+  }
+
+  .post-container h3 {
+    margin-top: 25px;
+    font-size: 1.3rem;
+  }
+
+  /* Horizontal line */
+  .post-container hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 30px 0;
+  }
+
+  /* Content styling */
+  .post-container p,
+  .post-container li {
+    font-size: 1.05rem;
+  }
+
+  /* Code block */
+  pre {
+    background: #f6f8fa;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+
+  /* Blockquote */
+  blockquote {
+    border-left: 4px solid #159957;
+    padding-left: 15px;
+    color: #555;
+    margin-left: 0;
+    font-style: italic;
+  }
+
+  /* Images */
+  .post-container img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  /* PDF iframe */
+  .pdf-frame {
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+</style>
+
+<div class="post-container">
+  
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  {% if page.date %}
+  <p class="post-meta">
+    📅 {{ page.date | date: "%B %d, %Y" }}
+  </p>
+  {% endif %}
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  <hr>
+
+  <p class="post-meta">🔹 Written by {{ site.title }}</p>
+
+</div>

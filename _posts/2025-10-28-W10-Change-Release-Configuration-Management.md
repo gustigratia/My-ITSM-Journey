@@ -1,5 +1,4 @@
 ---
-theme: minima
 layout: post
 title: "Week 10 - Change, Release, and Configuration Management"
 date: 2025-10-28
@@ -52,7 +51,7 @@ This activity showed how accurate CMDB data supports better control and traceabi
 ---
 
 ## Reflection  
-This group task provided hands-on experience with **ITIL Service Transition**.  
+This group task provided hands-on experience with ITIL Service Transition.  
 By working together on the **RFC**, **Release Plan**, and **Configuration Records**, we learned how these processes connect — ensuring changes are authorized, deployed safely, and properly documented.  
 It highlighted how collaboration, documentation accuracy, and clear workflows are essential for maintaining reliable IT services.
 
@@ -63,3 +62,5 @@ It highlighted how collaboration, documentation accuracy, and clear workflows ar
 For a detailed breakdown of the activity, refer to the [PDF Class Activity](/My-ITSM-Journey/assets/Week10.pdf) embedded below:
 
 <iframe src="/My-ITSM-Journey/assets/Week10.pdf" width="100%" height="600px"></iframe>
+
+
