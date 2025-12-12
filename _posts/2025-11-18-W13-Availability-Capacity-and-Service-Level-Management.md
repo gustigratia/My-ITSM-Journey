@@ -150,4 +150,4 @@ Through Week 13, I gained a deeper understanding of how availability, capacity, 
 
 For a detailed breakdown of the activity, refer to the [PDF Class Activity](/My-ITSM-Journey/assets/Week13.pdf) embedded below:
 
-<iframe src="/My-ITSM-Journey/assets/Week10.pdf" width="100%" height="600px"></iframe>
+<iframe src="/My-ITSM-Journey/assets/Week13.pdf" width="100%" height="600px"></iframe>
