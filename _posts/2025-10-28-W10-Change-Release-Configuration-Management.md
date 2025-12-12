@@ -1,5 +1,4 @@
 ---
-theme: minima
 layout: post
 title: "Week 10 - Change, Release, and Configuration Management"
 date: 2025-10-28
