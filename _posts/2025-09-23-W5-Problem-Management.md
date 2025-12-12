@@ -1,5 +1,4 @@
 ---
-theme: minima
 layout: post
 title: "Week 5-Problem Management"
 date: 2025-09-23
