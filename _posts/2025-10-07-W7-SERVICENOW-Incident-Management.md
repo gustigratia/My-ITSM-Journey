@@ -1,5 +1,4 @@
 ---
-theme: minima
 layout: post
 title: "Week 7 - Group Simulation Lab: Turning Real Data into ITIL Tickets in ServiceNow"
 date: 2025-10-07
