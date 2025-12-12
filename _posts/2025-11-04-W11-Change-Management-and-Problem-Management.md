@@ -155,4 +155,4 @@ Through **Problem Management**, I gained insight into how a single configuration
 
 For a detailed breakdown of the activity, refer to the [PDF Class Activity](/My-ITSM-Journey/assets/Week11.pdf) embedded below:
 
-<iframe src="/My-ITSM-Journey/assets/Week10.pdf" width="100%" height="600px"></iframe>
+<iframe src="/My-ITSM-Journey/assets/Week11.pdf" width="100%" height="600px"></iframe>
